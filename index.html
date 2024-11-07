@@ -12,24 +12,59 @@
     <link href="./assets/css/output.css" rel="stylesheet">
 </head>
 <body class="bg-blue-700">
-    <header>
-        <div class="max-w-6xl mx-auto flex justify-between items-center mt-8 rounded-full bg-black/50 backdrop-blur shadow-lg px-1 py-1 text-white">
-            <div class="w-full flex justify-start items-center gap-6">
-                <div class="flex w-10">
-                    <img src="assets/images/hsi-logo.webp" alt="logo hsi" class="object-cover w-full">
+    <header class="h-screen flex flex-col justify-start px-1 md:px-0">
+        <div class="w-full max-w-6xl mx-auto flex justify-between items-center mt-8 rounded-full bg-black/50 backdrop-blur shadow-lg py-[.2rem] md:px-1 md:py-1  text-white">
+            <div class="w-full flex justify-between pr-8 md:pr-0 md:justify-start items-center md:gap-8">
+                <div class="w-8 md:w-12">
+                    
+                    <img src="assets/images/hsi-logo.webp" alt="logo hsi" class="w-full block">
                 </div>
                 <nav>
-                    <ul class="flex gap-6">
-                        <li>Masalah?</li>
-                        <li>Solusi</li>
-                        <li>Tentang</li>
-                        <li>FAQ</li>
+                    <ul class="flex gap-4 md:gap-8">
+                        <li class="font-bold">Masalah?</li>
+                        <li class="font-bold">Solusi</li>
+                        <li class="font-bold">Tentang</li>
+                        <li class="font-bold">FAQ</li>
                     </ul>
                 </nav>
             </div>
-            <div class="flex gap-4">
-                <button>Login</button>
-                <button class="bg-white text-blue-500 py-2 px-4 rounded-full">Daftar</button>
+            <div class="flex gap-4 pr-1">
+                <button class="hidden md:block">Login</button>
+                <button class="bg-white text-blue-500 py-1 px-2 md:py-3 md:px-6 rounded-full">Daftar</button>
+            </div>
+        </div>
+
+        <div class="w-full h-full flex flex-col">
+            <div class="h-full flex flex-col">
+                <div class="h-full w-full md:max-w-6xl flex justify-end items-center px-2  ">
+                    <!-- Gambar -->
+                    <div class="flex">
+                        <div class="w-16 md:w-20 z-10 -mr-8 md:-mr-12">
+                            <img src="assets/images/doodle-left-top.webp" alt="" class="w-full">
+                        </div>
+                        <div class="w-40 md:w-52 -mr-20 -mt-24 md:-mr-28 md:-mt-28] z-10 ">
+                            <img src="assets/images/mockup-hero.webp" alt="hsi hero" class="w-full">
+                        </div>
+                    </div>
+                
+                    <!-- Teks -->
+                     <div class="flex flex-col">
+                        <div class="w-20 md:w-28 -mb-10 md:-mb-20 ms-20">
+                            <img src="assets/images/doodle-right-top.webp" alt="" class="w-full z-20 ">
+                        </div>
+                         <h1 class="flex flex-col md:max-w-md ">
+                             <span class="font-black text-5xl md:text-7xl text-yellow-400 z-20">Menuntut Ilmu</span>
+                             <span class="font-black text-5xl md:text-7xl text-white ms-8 md:ms-14">Jalan menuju Surga</span>
+                         </h1>
+                     </div>
+                </div>
+                
+                <div class="mx-auto">
+                    <button class="flex gap-4 bg-blue-900 text-white py-1 px-2 md:py-3 md:px-6 rounded-full text-xl shadow-lg ">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white w-5"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                        <p>Belajar di <b>HSI</b></p>
+                        </button></div>
+                <div></div>
             </div>
         </div>
     </header>
