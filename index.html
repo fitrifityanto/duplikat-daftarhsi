@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link href="./assets/css/output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body class="bg-blue-700">
     <header class="h-screen flex flex-col justify-start px-1 md:px-0">
@@ -37,7 +38,6 @@
         <div class="w-full h-full flex flex-col">
             <div class="h-full flex flex-col pb-4">
                 <div class="h-full w-full md:max-w-6xl flex justify-end items-center px-2  ">
-                    <!-- Gambar -->
                     <div class="flex items-center -mt-14 md:mt-0">
                         <div class="w-16 md:w-20 z-10 -mr-7 md:-mr-7">
                             <img src="assets/images/doodle-left-top.webp" alt="" class="w-full">
@@ -47,9 +47,8 @@
                         </div>
                     </div>
                 
-                    <!-- Teks -->
                      <div class="flex flex-col -mt-32 md:mt-0">
-                        <div class="w-20 md:w-28 -mb-10 md:-mb-20 ms-20">
+                        <div class="w-16 md:w-28 -mb-10 md:-mb-20 ms-20">
                             <img src="assets/images/doodle-right-top.webp" alt="" class="w-full z-20 ">
                         </div>
                          <h1 class="flex flex-col md:max-w-md">
@@ -59,7 +58,7 @@
                      </div>
                 </div>
                 
-                <div class="mx-auto">
+                <div class="mx-auto" data-aos="fade-up">
                     <button class="flex items-center gap-4 bg-blue-900 text-white py-1 px-2 md:py-2 md:px-6 rounded-full text-xl shadow-lg ">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white w-4"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                         <p>Belajar di <b>HSI</b></p>
@@ -70,13 +69,26 @@
     </header>
 
     <main>
+        <!-- kutipan hadits -->
         <div>
-            <div class="flex flex-col text-white items-center mt-10 md:mt-14">
-                <bdo dir="rtl" class="font-serif text-base">وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ</bdo>
-                <blockquote class="text-xs mt-4" cite="https://rumaysho.com/12363-menuntut-ilmu-jalan-paling-cepat-menuju-surga.html">“Siapa yang menempuh jalan untuk mencari ilmu, maka Allah akan mudahkan baginya jalan menuju surga.”</blockquote>
-                <p class="text-xs font-semibold mt-1"><cite>(HR. Muslim, no. 2699)</cite></p>
+            <div class="flex flex-col text-white items-center mt-10 md:mt-14 text-center px-1 md:px-0" >
+                <div class="flex flex-col items-end">
+                    <div class="w-16 md:w-20 -mb-10 -mr-36">
+                        <img src="assets/images/doodle-right-bottom.webp" alt="" class="w-full z-20 ">
+                    </div>
+                    <bdo dir="rtl" class="font-serif text-base">وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ</bdo>
+                </div>
+                <div>
+                    <blockquote class="text-xs mt-4" cite="https://rumaysho.com/12363-menuntut-ilmu-jalan-paling-cepat-menuju-surga.html">“Siapa yang menempuh jalan untuk mencari ilmu, maka Allah akan mudahkan baginya jalan menuju surga.”</blockquote>
+                    <p class="text-xs font-semibold mt-1"><cite>(HR. Muslim, no. 2699)</cite></p>
+                    <div class="w-16 md:w-28 -ml-16 -mt-12">
+                        <img src="assets/images/doodle-left-bottom.webp" alt="" class="w-full z-20 ">
+                    </div>
+                </div>
             </div>
         </div>
+        
     </main>
+
 </body>
 </html>
