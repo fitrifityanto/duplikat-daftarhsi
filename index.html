@@ -12,108 +12,111 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="bg-blue-700">
-    <header class="h-screen flex flex-col justify-start px-1 md:px-0">
-        <div class="w-full max-w-6xl mx-auto flex justify-between items-center ps-1 mt-2 md:mt-8 rounded-full bg-black/50 backdrop-blur shadow-lg py-[.2rem] md:px-1 md:py-1 text-white sticky top-0 z-50">
-            <div class="w-full flex justify-start items-center md:gap-8">
-                <div class="w-8 md:w-12">
+<body>
+    <div class="bg-blue-700 relative">
+        <header class="sticky top-0 z-50 flex flex-col justify-start px-1 md:px-0">
+            <div class="w-full max-w-6xl mx-auto flex justify-between items-center ps-1 mt-2 md:mt-8 rounded-full bg-black/50 backdrop-blur shadow-lg py-[.2rem] md:px-1 md:py-1 text-white">
+                <div class="w-full flex justify-start items-center md:gap-8">
+                    <div class="w-8 md:w-12">
+                        
+                        <img src="assets/images/hsi-logo.webp" alt="logo hsi" class="w-full block">
+                    </div>
+                    <nav class="mx-auto md:mx-0">
+                        <ul class="flex gap-3 md:gap-8">
+                            <li class="font-bold text-sm md:text-base">Masalah?</li>
+                            <li class="font-bold text-sm md:text-base">Solusi</li>
+                            <li class="font-bold text-sm md:text-base">Tentang</li>
+                            <li class="font-bold text-sm md:text-base">FAQ</li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="flex gap-4 pr-1">
+                    <button class="hidden md:block">Login</button>
+                    <button class="bg-white text-blue-500 py-1 px-2 md:py-3 md:px-6 rounded-full">Daftar</button>
+                </div>
+            </div>
+        </header>
+        <div class="h-[90vh]">
+            <div class="w-full h-full flex flex-col">
+                <div class="h-full flex flex-col pb-4">
+                    <div class="h-full w-full md:max-w-6xl flex justify-end items-center px-2  ">
+                        <div class="flex items-center -mt-14 md:mt-0">
+                            <div class="w-16 md:w-20 z-10 -mr-7 md:-mr-7">
+                                <img src="assets/images/doodle-left-top.webp" alt="" class="w-full">
+                            </div>
+                            <div class="w-28 md:w-52 -mr-14 md:-mr-28 md:-mt-20 z-10 ">
+                                <img src="assets/images/mockup-hero.webp" alt="hsi hero" class="w-full">
+                            </div>
+                        </div>
                     
-                    <img src="assets/images/hsi-logo.webp" alt="logo hsi" class="w-full block">
-                </div>
-                <nav class="mx-auto md:mx-0">
-                    <ul class="flex gap-3 md:gap-8">
-                        <li class="font-bold text-sm md:text-base">Masalah?</li>
-                        <li class="font-bold text-sm md:text-base">Solusi</li>
-                        <li class="font-bold text-sm md:text-base">Tentang</li>
-                        <li class="font-bold text-sm md:text-base">FAQ</li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="flex gap-4 pr-1">
-                <button class="hidden md:block">Login</button>
-                <button class="bg-white text-blue-500 py-1 px-2 md:py-3 md:px-6 rounded-full">Daftar</button>
-            </div>
-        </div>
-
-        <div class="w-full h-full flex flex-col">
-            <div class="h-full flex flex-col pb-4">
-                <div class="h-full w-full md:max-w-6xl flex justify-end items-center px-2  ">
-                    <div class="flex items-center -mt-14 md:mt-0">
-                        <div class="w-16 md:w-20 z-10 -mr-7 md:-mr-7">
-                            <img src="assets/images/doodle-left-top.webp" alt="" class="w-full">
-                        </div>
-                        <div class="w-28 md:w-52 -mr-14 md:-mr-28 md:-mt-20 z-10 ">
-                            <img src="assets/images/mockup-hero.webp" alt="hsi hero" class="w-full">
-                        </div>
+                         <div class="flex flex-col -mt-32 md:mt-0">
+                            <div class="w-16 md:w-28 -mb-10 md:-mb-20 ms-20">
+                                <img src="assets/images/doodle-right-top.webp" alt="" class="w-full z-20 ">
+                            </div>
+                             <h1 class="flex flex-col md:max-w-md">
+                                 <span class="font-black text-2xl md:text-7xl text-yellow-400 z-20">Menuntut Ilmu</span>
+                                 <span class="font-black text-2xl md:text-7xl text-white ms-10 md:ms-20">Jalan menuju Surga</span>
+                             </h1>
+                         </div>
                     </div>
-                
-                     <div class="flex flex-col -mt-32 md:mt-0">
-                        <div class="w-16 md:w-28 -mb-10 md:-mb-20 ms-20">
-                            <img src="assets/images/doodle-right-top.webp" alt="" class="w-full z-20 ">
-                        </div>
-                         <h1 class="flex flex-col md:max-w-md">
-                             <span class="font-black text-2xl md:text-7xl text-yellow-400 z-20">Menuntut Ilmu</span>
-                             <span class="font-black text-2xl md:text-7xl text-white ms-10 md:ms-20">Jalan menuju Surga</span>
-                         </h1>
-                     </div>
-                </div>
-                
-                <div class="mx-auto" data-aos="fade-up">
-                    <button class="flex items-center gap-4 bg-blue-900 text-white py-1 px-2 md:py-2 md:px-6 rounded-full text-xl shadow-lg ">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white w-4"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
-                        <p>Belajar di <b>HSI</b></p>
-                    </button>
+                    
+                    <div class="mx-auto" data-aos="fade-up">
+                        <button class="flex items-center gap-4 bg-blue-900 text-white py-1 px-2 md:py-2 md:px-6 rounded-full text-xl shadow-lg ">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white w-4"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                            <p>Belajar di <b>HSI</b></p>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
-
-    <main>
-        <!-- kutipan hadits -->
-        <section>
-            <div class="flex flex-col text-white items-center mt-10 md:mt-14 text-center px-1 md:px-0" >
-                <div class="flex flex-col items-end">
-                    <div class="w-16 md:w-20 -mb-10 -mr-36">
-                        <img src="assets/images/doodle-right-bottom.webp" alt="" class="w-full z-20 ">
+    
+        <main class="min-h-screen">
+            <!-- kutipan hadits -->
+            <section>
+                <div class="flex flex-col text-white items-center mt-10 md:mt-14 text-center px-1 md:px-0" >
+                    <div class="flex flex-col items-end">
+                        <div class="w-16 md:w-20 -mb-10 -mr-36">
+                            <img src="assets/images/doodle-right-bottom.webp" alt="" class="w-full z-20 ">
+                        </div>
+                        <bdo dir="rtl" class="font-serif text-base">وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ</bdo>
                     </div>
-                    <bdo dir="rtl" class="font-serif text-base">وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ</bdo>
-                </div>
-                <div>
-                    <blockquote class="text-xs mt-4" cite="https://rumaysho.com/12363-menuntut-ilmu-jalan-paling-cepat-menuju-surga.html">“Siapa yang menempuh jalan untuk mencari ilmu, maka Allah akan mudahkan baginya jalan menuju surga.”</blockquote>
-                    <p class="text-xs font-semibold mt-1"><cite>(HR. Muslim, no. 2699)</cite></p>
-                    <div class="w-16 md:w-28 -ml-16 -mt-12">
-                        <img src="assets/images/doodle-left-bottom.webp" alt="" class="w-full z-20 ">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- card number 1 -->
-         <section>
-            <div class="w-full max-w-6xl mx-auto bg-white rounded-3xl p-8 border-white">
-                <div>
-                    <div><h2>Sibuk sibuk, no-time?</h2></div>
                     <div>
-                        <div>
-                            <div><p>Mana sempat?</p></div>
-                            <div>1</div>
+                        <blockquote class="text-xs mt-4" cite="https://rumaysho.com/12363-menuntut-ilmu-jalan-paling-cepat-menuju-surga.html">“Siapa yang menempuh jalan untuk mencari ilmu, maka Allah akan mudahkan baginya jalan menuju surga.”</blockquote>
+                        <p class="text-xs font-semibold mt-1"><cite>(HR. Muslim, no. 2699)</cite></p>
+                        <div class="w-16 md:w-28 -ml-16 -mt-12">
+                            <img src="assets/images/doodle-left-bottom.webp" alt="" class="w-full z-20 ">
                         </div>
+                    </div>
+                </div>
+            </section>
+            <!-- card number 1 -->
+             <section class="w-full max-w-6xl mx-auto p-5">
+                <div class="bg-white rounded-3xl p-6 border-white">
+                    <div>
+                        <div><h2 class="text-blue-700 text-5xl">Sibuk sibuk, no-time?</h2></div>
                         <div>
-                            <p>
-                                Banyak yang beralasan sibuk hingga lalai dan meninggalkan belajar agama. Padahal kebutuhan kita terhadap ilmu agama bagaikan seseorang yang membutuhkan makan setiap harinya.
-                            </p> 
-                            <p>
-                                Tanpa ilmu agama, hidup kita akan terasa hampa, tidak tenteram, dapat terjerumus dalam perkara yang haram hingga meninggalkan kewajiban, bahkan bisa terjatuh dalam syirik dan kebid'ahan.
-                            </p>
+                            <div>
+                                <div><p>Mana sempat?</p></div>
+                                <div>1</div>
+                            </div>
+                            <div>
+                                <p>
+                                    Banyak yang beralasan sibuk hingga lalai dan meninggalkan belajar agama. Padahal kebutuhan kita terhadap ilmu agama bagaikan seseorang yang membutuhkan makan setiap harinya.
+                                </p> 
+                                <p>
+                                    Tanpa ilmu agama, hidup kita akan terasa hampa, tidak tenteram, dapat terjerumus dalam perkara yang haram hingga meninggalkan kewajiban, bahkan bisa terjatuh dalam syirik dan kebid'ahan.
+                                </p>
+                        </div>
+                        </div>
                     </div>
+                    <div>
+                        <div><img src="assets/images/icon_delete.webp" </div>
+                        <div><img src="assets/images/icon_clock.webp" </div>
                     </div>
                 </div>
-                <div>
-                    <div><img src="assets/images/icon_delete.webp" </div>
-                    <div><img src="assets/images/icon_clock.webp" </div>
-                </div>
-            </div>
-         </section>
-    </main>
+             </section>
+        </main>
+    </div>
 
 </body>
 </html>
