@@ -9,11 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="assets/css/output.css" rel="stylesheet">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 </head>
-<body>
-    <div class="bg-blue-700 relative">
+<body class="bg-blue-700 ">
+    <div class="relative">
         <header class="sticky top-0 z-50 flex flex-col justify-start px-1 md:px-0">
             <div class="w-full max-w-6xl mx-auto flex justify-between items-center ps-1 mt-2 md:mt-8 rounded-full bg-black/50 backdrop-blur shadow-lg py-[.2rem] md:px-1 md:py-1 text-white">
                 <div class="w-full flex justify-start items-center md:gap-8">
@@ -60,7 +63,7 @@
                          </div>
                     </div>
                     
-                    <div class="mx-auto" data-aos="fade-up">
+                    <div class="mx-auto">
                         <button class="flex items-center gap-4 bg-blue-900 text-white py-1 px-2 md:py-2 md:px-6 rounded-full text-xl shadow-lg ">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white w-4"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
                             <p>Belajar di <b>HSI</b></p>
@@ -72,10 +75,10 @@
     
         <main class="min-h-screen">
             <!-- kutipan hadits -->
-            <section>
+            <section data-aos="fade-up">
                 <div class="flex flex-col text-white items-center mt-10 md:mt-14 text-center px-1 md:px-0" >
                     <div class="flex flex-col items-end">
-                        <div class="w-16 md:w-20 -mb-10 -mr-36">
+                        <div class="w-16 md:w-20 -mb-4 md:-mb-10 md:-mr-36">
                             <img src="assets/images/doodle-right-bottom.webp" alt="" class="w-full z-20 ">
                         </div>
                         <bdo dir="rtl" class="font-serif text-base">وَمَنْ سَلَكَ طَرِيقًا يَلْتَمِسُ فِيهِ عِلْمًا سَهَّلَ اللَّهُ لَهُ بِهِ طَرِيقًا إِلَى الْجَنَّةِ</bdo>
@@ -83,40 +86,43 @@
                     <div>
                         <blockquote class="text-xs mt-4" cite="https://rumaysho.com/12363-menuntut-ilmu-jalan-paling-cepat-menuju-surga.html">“Siapa yang menempuh jalan untuk mencari ilmu, maka Allah akan mudahkan baginya jalan menuju surga.”</blockquote>
                         <p class="text-xs font-semibold mt-1"><cite>(HR. Muslim, no. 2699)</cite></p>
-                        <div class="w-16 md:w-28 -ml-16 -mt-12">
+                        <div class="w-16 md:w-28 md:-ml-16 -mt-12">
                             <img src="assets/images/doodle-left-bottom.webp" alt="" class="w-full z-20 ">
                         </div>
                     </div>
                 </div>
             </section>
+            <div class="flex justify-center items-center pb-16">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="fill-white w-6 animate-bounce"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+            </div>
             <!-- card number 1 -->
-             <section class="w-full max-w-6xl mx-auto p-5">
-                <div class="bg-white rounded-3xl p-6 border-white">
-                    <div>
-                        <div><h2 class="text-blue-700 text-5xl">Sibuk sibuk, no-time?</h2></div>
-                        <div>
-                            <div>
-                                <div><p>Mana sempat?</p></div>
-                                <div>1</div>
-                            </div>
-                            <div>
-                                <p>
-                                    Banyak yang beralasan sibuk hingga lalai dan meninggalkan belajar agama. Padahal kebutuhan kita terhadap ilmu agama bagaikan seseorang yang membutuhkan makan setiap harinya.
-                                </p> 
-                                <p>
-                                    Tanpa ilmu agama, hidup kita akan terasa hampa, tidak tenteram, dapat terjerumus dalam perkara yang haram hingga meninggalkan kewajiban, bahkan bisa terjatuh dalam syirik dan kebid'ahan.
-                                </p>
-                        </div>
-                        </div>
+            <section class="w-full max-w-6xl mx-auto p-5">
+                <div class="w-full grid grid-cols-1 md:grid-cols-2  bg-white rounded-3xl px-6 py-5">
+                    <div class="lg:pb-6 md:w-11/12 md:h-14 border-b-2 border-blue-500">
+                        <h2 class="text-blue-700 text-2xl lg:text-5xl">Sibuk sibuk, <span class="italic">no-time?</span></h2>
                     </div>
-                    <div>
-                        <div><img src="assets/images/icon_delete.webp" </div>
-                        <div><img src="assets/images/icon_clock.webp" </div>
+                    <div class="my-4"><p class="font-bold">Mana sempat?</p></div>
+                    <div class="md:row-start-3 flex flex-col gap-4 md:pr-4">
+                        <p class="text-slate-700">
+                            Banyak yang beralasan sibuk hingga lalai dan meninggalkan belajar agama. Padahal kebutuhan kita terhadap ilmu agama bagaikan seseorang yang membutuhkan makan setiap harinya.
+                        </p> 
+                        <p class="text-slate-700">
+                            Tanpa ilmu agama, hidup kita akan terasa hampa, tidak tenteram, dapat terjerumus dalam perkara yang haram hingga meninggalkan kewajiban, bahkan bisa terjatuh dalam syirik dan kebid'ahan.
+                        </p>
                     </div>
+                    <div class="md:col-start-2 md:row-start-1 md:row-span-4 grid grid-cols-4 border-2 border-blue-400">
+                        <div class="z-20 max-w-56 col-span-3 row-span-3 "><img src="assets/images/icon_delete.webp" class="w-full"> </div>
+                        <div class="z-10 max-w-64 col-start-2 col-span-4 row-start-4 row-span-4 -mt-36 "><img src="assets/images/icon_clock.webp" class="w-full border-2 border-black"> </div>
+                    </div>
+                    <div class="w-14 h-14 md:row-start-4 border border-black rounded-full flex justify-center items-center font-black text-3xl">1</div>
                 </div>
-             </section>
+
+            </section>
         </main>
     </div>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
