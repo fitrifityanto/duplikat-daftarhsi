@@ -5,9 +5,9 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         // Simple 16 column grid
-        '2': 'repeat(2, 200px)',
-        '3': 'repeat(3, 200px)',
-        '4': 'repeat(4, 200px)',
+        'col2': 'repeat(2, 200px)',
+        'col3': 'repeat(3, 200px)',
+        'col4': 'repeat(4, 200px)',
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 50s linear infinite',
